@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: "creat-game-registrations"
+      author: Pavel
+      changes:
+        - createTable:
+            tableName: "game-registrations"
+            schemaName: public
+            columns:
+              - column:
+                  name: games_uuid
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: "player_tgid"
+                  type: clob
+              - column:
+                  name: "status"
+                  type: clob

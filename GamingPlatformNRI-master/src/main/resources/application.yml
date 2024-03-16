@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: 123
+        url: jdbc:postgresql://localhost:5432/nri_bot
+        username: postgres
+
+    jpa:
+        hibernate:
+            ddl-auto: create
+
+    liquibase:
+        change-log: db/changelog/changelog-master.yaml

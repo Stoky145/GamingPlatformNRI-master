@@ -1,0 +1,62 @@
+databaseChangeLog:
+  - changeSet:
+      id: "create-table-planned-games"
+      author: Pavel
+      changes:
+        - createTable:
+            tableName: "planned_games"
+            schemaName: public
+            columns:
+              - column:
+                  name: game_uuid
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: "begin_at"
+                  type: datetime
+              - column:
+                  name: "end_at"
+                  type: datetime
+              - column:
+                  name: "name"
+                  type: clob
+              - column:
+                  name: "description"
+                  type: clob
+              - column:
+                  name: "rpg_system"
+                  type: clob
+              - column:
+                  name: "gamemaster_thid"
+                  type: clob
+              - column:
+                  name: "max_players"
+                  type: numeric
+              - column:
+                  name: image
+                  type: clob
+              - column:
+                  name: "message_id"
+                  type: clob
+              - column:
+                  name: "channel_link"
+                  type: clob
+              - column:
+                  name: "created_at"
+                  type: TIMESTAMP WITHOUT TIME ZONE
+              - column:
+                  name: "createdBy"
+                  type: clob
+              - column:
+                  name: "changed_at"
+                  type: TIMESTAMP WITHOUT TIME ZONE
+              - column:
+                  name: "changedBy"
+                  type: clob
+              - column:
+                  name: "status"
+                  type: clob
+
