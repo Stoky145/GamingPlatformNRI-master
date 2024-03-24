@@ -3,3 +3,7 @@ databaseChangeLog:
       file: db/changelog/v.1.0.0/create-table-planned-games.yaml
   - include:
       file: db/changelog/v.1.0.0/create-table-game-registrations.yaml
+  - include:
+      file: db/changelog/v.1.0.0/rename-column.yaml
+  - include:
+      file: db/changelog/v.1.0.0/rename-column-channel.yaml

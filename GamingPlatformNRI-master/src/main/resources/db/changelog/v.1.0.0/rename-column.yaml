@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: renameColumn
+      author: PavelMoiseev
+      changes:
+        - renameColumn:
+            tableName: "planned_games"
+            schemaName: public
+            oldColumnName: gamemaster_thid
+            newColumnName: game_master_tg_id
+        - renameColumn:
+            tableName: "planned_games"
+            schemaName: public
+            oldColumnName: createdBy
+            newColumnName: create_by
+        - renameColumn:
+            tableName: "planned_games"
+            schemaName: public
+            oldColumnName: changedBy
+            newColumnName: changed_by

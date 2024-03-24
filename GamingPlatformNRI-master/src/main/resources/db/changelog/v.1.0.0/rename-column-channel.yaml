@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: rename-column-channel-link
+      author: admin
+      changes:
+        - renameColumn:
+            tableName: "planned_games"
+            schemaName: public
+            oldColumnName: channel_ink
+            newColumnName: channel_Link

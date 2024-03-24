@@ -16,6 +16,9 @@ public class PlannedGamesEntity {
     @Column(name = "game_uuid")
     private int gameUuid;
 
+    @Column(name = "max_players")
+    private int maxPlayers;
+
     @Column(name = "begin_at")
     private String beginAt;
 
@@ -33,9 +36,6 @@ public class PlannedGamesEntity {
 
     @Column(name = "gamemaster_tgid")
     private String gameMasterTGID;
-
-    @Column(name = "max_players")
-    private int maxPlayers;
 
     @Column(name = "image")
     private String image;
