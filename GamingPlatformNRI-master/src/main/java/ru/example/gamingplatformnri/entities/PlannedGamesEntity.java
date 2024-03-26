@@ -22,6 +22,15 @@ public class PlannedGamesEntity {
     @Column(name = "begin_at")
     private String beginAt;
 
+    @Column(name = "changed_at")
+    private String changedAt;
+
+    @Column(name = "created_by")
+    private String createdBy;
+
+    @Column(name = "channel_ink")
+    private String channelLink;
+
     @Column(name = "end_at")
     private String endAt;
 
@@ -43,20 +52,8 @@ public class PlannedGamesEntity {
     @Column(name = "message_id")
     private String messageId;
 
-    @Column(name = "channel_ink")
-    private String channelLink;
-
     @Column(name = "created_at")
     private String createdAt;
-
-    @Column(name = "created_by")
-    private String createdBy;
-
-    @Column(name = "changed_at")
-    private String changedAt;
-
-    @Column(name = "changed_by")
-    private String changedBy;
 
     @Column(name = "status")
     private String status;
@@ -67,20 +64,19 @@ public class PlannedGamesEntity {
     public String toString() {
         return "PlannedGamesEntity{" +
                 "gameUuid=" + gameUuid +
+                ", maxPlayers=" + maxPlayers +
                 ", beginAt='" + beginAt + '\'' +
+                ", changedAt='" + changedAt + '\'' +
+                ", createdBy='" + createdBy + '\'' +
+                ", channelLink='" + channelLink + '\'' +
                 ", endAt='" + endAt + '\'' +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", rpgSystem='" + rpgSystem + '\'' +
                 ", gameMasterTGID='" + gameMasterTGID + '\'' +
-                ", maxPlayers=" + maxPlayers +
                 ", image='" + image + '\'' +
                 ", messageId='" + messageId + '\'' +
-                ", channelLink='" + channelLink + '\'' +
                 ", createdAt='" + createdAt + '\'' +
-                ", createdBy='" + createdBy + '\'' +
-                ", changedAt='" + changedAt + '\'' +
-                ", changedBy='" + changedBy + '\'' +
                 ", status='" + status + '\'' +
                 '}';
     }
